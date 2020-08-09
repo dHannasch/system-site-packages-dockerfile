@@ -25,11 +25,6 @@ def read(*names, **kwargs):
 
 setup(
     name='tox-sitepackages-example',
-    use_scm_version={
-        'local_scheme': 'dirty-tag',
-        'write_to': 'src/tox_sitepackages_example/_version.py',
-        'fallback_version': '0.0.0',
-    },
     license='BSD-2-Clause',
     description='An example package. Generated with cookiecutter-pylibrary.',
     author='David A. Hannasch',
@@ -77,17 +72,4 @@ setup(
         'detectron2',
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
-    extras_require={
-        # eg:
-        #   'rst': ['docutils>=0.11'],
-        #   ':python_version=="2.6"': ['argparse'],
-    },
-    setup_requires=[
-        'setuptools_scm>=3.3.1',
-    ],
-    entry_points={
-        'console_scripts': [
-            'tox-sitepackages-example = tox_sitepackages_example.cli:main',
-        ]
-    },
 )
