@@ -32,10 +32,6 @@ setup(
     },
     license='BSD-2-Clause',
     description='An example package. Generated with cookiecutter-pylibrary.',
-    long_description='%s\n%s' % (
-        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
-        re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
-    ),
     author='David A. Hannasch',
     author_email='David.A.Hannasch@gmail.com',
     url='https://github.com/dHannasch/tox-sitepackages-example',
