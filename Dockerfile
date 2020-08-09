@@ -1,10 +1,11 @@
-FROM dahanna/python:3.7-detectron2-tox
+FROM dahanna/python:3.8-detectron2
 
 COPY ./setup.py ./
 COPY ./tox.ini ./
 COPY ./test_blah.py ./
 
-RUN python -m virtualenv -vvv --with-traceback --system-site-packages --no-download py38 \
+RUN python -m pip install tox
+    && python -m virtualenv -vvv --with-traceback --system-site-packages --no-download py38 \
     && python -m pip install detectron2 \
     # Without virtualenv involved, pip install detectron2 yields
     # Requirement already satisfied: detectron2 in /opt/conda/lib/python3.7/site-packages
