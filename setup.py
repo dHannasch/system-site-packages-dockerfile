@@ -28,6 +28,7 @@ setup(
     license='BSD-2-Clause',
     description='An example package. Generated with cookiecutter-pylibrary.',
     long_description='An example package. Generated with cookiecutter-pylibrary.',
+    version='0.0.0',
     author='David A. Hannasch',
     author_email='David.A.Hannasch@gmail.com',
     url='https://github.com/dHannasch/tox-sitepackages-example',
