@@ -1,6 +1,7 @@
 FROM dahanna/python:3.7-detectron2-tox
 
 COPY ./setup.py ./
+COPY ./tox.ini ./
 
 RUN python -m virtualenv -vvv --with-traceback --system-site-packages --no-download py38 \
     && python -m pip install detectron2 \
