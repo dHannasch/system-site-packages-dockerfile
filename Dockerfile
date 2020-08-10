@@ -9,7 +9,7 @@ RUN python -m pip install tox \
     && python -m pip install detectron2 \
     # Without virtualenv involved, pip install detectron2 yields
     # Requirement already satisfied: detectron2 in /opt/conda/lib/python3.7/site-packages
-    && py38/bin/python -m pip install detectron2
+    && py38/bin/python -m pip install detectron2 # this crashes
     # && py38/bin/python -m pip install . \
     # && tox --recreate -vv --sitepackages
 
