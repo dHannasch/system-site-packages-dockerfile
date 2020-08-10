@@ -1,17 +1,10 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-from __future__ import absolute_import
-from __future__ import print_function
+from __future__ import absolute_import, print_function
 
 import io
-import re
-from glob import glob
-from os.path import basename
-from os.path import dirname
-from os.path import join
-from os.path import splitext
+from os.path import dirname, join
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -27,7 +20,7 @@ setup(
     name='tox-sitepackages-example',
     license='BSD-2-Clause',
     description='An example package. Generated with cookiecutter-pylibrary.',
-    long_description='An example package. Generated with cookiecutter-pylibrary.',
+    long_description='An example package.',
     version='0.0.0',
     author='David A. Hannasch',
     author_email='David.A.Hannasch@gmail.com',
@@ -37,7 +30,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     classifiers=[
-        # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
@@ -61,8 +53,6 @@ setup(
     ],
     project_urls={
         'Documentation': 'https://tox-sitepackages-example.readthedocs.io/',
-        'Changelog': 'https://tox-sitepackages-example.readthedocs.io/en/latest/changelog.html',
-        'Issue Tracker': 'https://github.com/dHannasch/tox-sitepackages-example/issues',
     },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
